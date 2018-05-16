@@ -1,4 +1,4 @@
-const count = 2;
+var count = 2;
 var num;
 function main() {
 num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
