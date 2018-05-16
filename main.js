@@ -11,4 +11,5 @@ var next = document.createElement('a');
 next.setAttribute('id','next');
 next.innerHTML = 'Next';
 if (num == count) {next.href = count + '.html'} else {next.href = (num + 1) + '.html'};
+document.body.appendChild(next,null);
 }
