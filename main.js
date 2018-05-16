@@ -1,7 +1,7 @@
 var count = 2;
 var num;
 function main() {
-  var br = document.createElement('br');
+  var br = document.createElement('p');
   document.body.appendChild(br);
   document.body.appendChild(br);
   num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
