@@ -1,4 +1,3 @@
-document.body.addEventListener('load',main);
 const count = 2;
 var num;
 function main() {
