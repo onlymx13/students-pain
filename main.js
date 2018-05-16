@@ -1,7 +1,8 @@
-document.addEventListener('load',main)
-function main() {
+document.addEventListener('load',main);
 const count = 2;
-var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
+var num;
+function main() {
+num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
 var prev = document.createElement('a');
 prev.setAttribute('id','prev');
 prev.innerHTML = 'Previous';
