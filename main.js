@@ -3,7 +3,7 @@ var num;
 function main() {
 var br = document.createElement('br');
 document.body.appendChild(br);
-documebt.body.appendChild(br);
+document.body.appendChild(br);
 num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
 var prev = document.createElement('a');
 prev.setAttribute('id','prev');
