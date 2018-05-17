@@ -1,5 +1,5 @@
 function main() {
-  const count = 2;
+  const count = 3;
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
   var ul = document.createElement('ul');
   ul.setAttribute('id','bottom-list');
