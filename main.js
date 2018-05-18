@@ -1,6 +1,6 @@
 var count;
 function main() {
-  for (var count=4;count<=100,count++){
+  for (var count=4;count<=100;count++){
     var request = new XMLHttpRequest();  
     request.open('GET',count + '.html', true);
     request.onreadystatechange = function(){
