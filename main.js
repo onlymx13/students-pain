@@ -1,3 +1,4 @@
+var count;
 function main() {
   for (var count=4;count<=100,count++){
     var request = new XMLHttpRequest();  
