@@ -1,18 +1,19 @@
 var count;
+var realCount = 0;
 function main() {
   for (var count=4;count<=100;count++){
     var request = new XMLHttpRequest();  
     request.open('GET',count + '.html', true);
     request.onreadystatechange = function(){
       if (request.readyState === 4){
-          if (request.status === 404) {  
-            break;
+          if (request.status === 404 && !realCount) {  
+            realCount = count;
           }  
       }
     }
   }
   request.send();
-  count--;
+  count = realCount - 1;
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
   var ul = document.createElement('ul');
   ul.setAttribute('id','bottom-list');
