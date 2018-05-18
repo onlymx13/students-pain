@@ -1,5 +1,17 @@
 function main() {
-  const count = 3;
+  for (var count=4;count<=100,count++){
+    var request = new XMLHttpRequest();  
+    request.open('GET',count + '.html', true);
+    request.onreadystatechange = function(){
+      if (request.readyState === 4){
+          if (request.status === 404) {  
+            break;
+          }  
+      }
+    }
+  }
+  request.send();
+  count--;
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
   var ul = document.createElement('ul');
   ul.setAttribute('id','bottom-list');
