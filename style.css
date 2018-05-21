@@ -4,7 +4,7 @@ a#prev, a#rand, a#next {
     background-color:#33cc93;
     float:left;
     text-decoration:none;
-    font-color:black;
+    color:black;
 }
 img {
     margin:16px;
