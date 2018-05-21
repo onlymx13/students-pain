@@ -3,6 +3,9 @@ var realCount = 0;
 function main() {
   const count = 4;
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
+  var title = document.createElement('title');
+  title.innerHTML = "Student's Pain: " + num;
+  document.head.appendChild(title);
   var ul = document.createElement('ul');
   ul.setAttribute('id','bottom-list');
   ul.style.listStyleType = 'none';
