@@ -34,4 +34,7 @@ function main() {
   ul.appendChild(li2);
   ul.appendChild(li3);
   document.body.appendChild(ul);
+  var finePrint = document.createElement('p');
+  finePrint.style.fontSize = '10px';
+  finePrint.innerHTML = "Student's Pain is made by MMMMMMMMMMMMM. Anything inspired directly by xkcd is used under the <a href='https://creativecommons.org/licenses/by-nc/2.5/'>CC BY-NC 2.5 License</a> , but xkcd does not endorse this.";
 }
