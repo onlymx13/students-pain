@@ -1,10 +1,13 @@
 a#prev, a#rand, a#next {
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
     background-color:#33cc93;
+    float:left;
+    text-decoration:none;
+    font-color:black;
 }
 img {
-    margin:20px;
+    margin:16px;
     align:center;
-    width:100vw;
+    width:80vw;
 }
