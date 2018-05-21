@@ -1,19 +1,7 @@
 var count;
 var realCount = 0;
 function main() {
-  for (var count=4;count<=100;count++){
-    var request = new XMLHttpRequest();  
-    request.open('GET',count + '.html', true);
-    request.onreadystatechange = function(){
-      if (request.readyState === 4){
-          if (request.status === 404 && !realCount) {  
-            realCount = count;
-          }  
-      }
-    }
-  }
-  request.send();
-  count = realCount - 1;
+  const count = 4;
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
   var ul = document.createElement('ul');
   ul.setAttribute('id','bottom-list');
@@ -23,7 +11,7 @@ function main() {
       li3 = document.createElement('li');
   li1.style.float = 'left';
   li2.style.float = 'left';
-  li3.style.floar = 'left';
+  li3.style.float = 'left';
   var prev = document.createElement('a');
   prev.setAttribute('id','prev');
   prev.innerHTML = 'Previous';
