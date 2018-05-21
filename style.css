@@ -5,8 +5,8 @@ a#prev, a#rand, a#next {
     float:left;
     text-decoration:none;
     color:black;
-    padding: 3px 2px;
-    margin: 5px 0px;
+    padding: 3px 5px;
+    margin: 3px 5px;
 }
 img {
     margin:16px;
