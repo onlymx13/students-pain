@@ -6,7 +6,8 @@ function main() {
     document.getElementById('redirect').src = count + '.html';
     var redirect = document.createElement('meta');
     redirect.httpEquiv = 'refresh';
-    redirect.content="0; url=" + count + ".html"
+    redirect.content="0; url=" + count + ".html";
+    document.head.appendChild(redirect);
   }
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
   var title = document.createElement('title');
