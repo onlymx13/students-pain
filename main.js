@@ -43,7 +43,7 @@ function main() {
   document.body.appendChild(ul);
   var finePrint = document.createElement('p');
   finePrint.style.fontSize = '10px';
-  finePrint.innerHTML = "Student's Pain is made by MMMMMMMMMMMMM. Anything inspired directly by xkcd is used under the <a href='https://creativecommons.org/licenses/by-nc/2.5/'>CC BY-NC 2.5 License</a> , but xkcd does not endorse this.";
+  finePrint.innerHTML = "Student's Pain is made by MMMMMMMMMMMMM. Anything inspired directly by xkcd is used because xkcd uses the <a href='https://creativecommons.org/licenses/by-nc/2.5/'>CC BY-NC 2.5 License</a> , but xkcd does not endorse Student's Pain in any way.";
   document.body.appendChild(document.createElement('br'));
   document.body.appendChild(document.createElement('br'));
   document.body.appendChild(finePrint);
