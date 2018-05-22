@@ -1,7 +1,13 @@
 var count;
 var realCount = 0;
 function main() {
-  const count = 4;
+  const count = 5;
+  if (document.getElementById('redirect')) {
+    document.getElementById('redirect').src = count + '.html';
+    var redirect = document.createElement('meta');
+    redirect.httpEquiv = 'refresh';
+    redirect.content="0; url=" + count + ".html"
+  }
   var num = document.getElementsByTagName('h1')[0].innerHTML.slice(16);
   var title = document.createElement('title');
   title.innerHTML = "Student's Pain: " + num;
