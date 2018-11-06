@@ -1,7 +1,7 @@
 var count;
 var realCount = 0;
 function main() {
-  const count = 7;
+  const count = 8;
   if (document.getElementById('redirect')) {
     document.getElementById('redirect').src = count + '.html';
     var redirect = document.createElement('meta');
