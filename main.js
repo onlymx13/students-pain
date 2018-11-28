@@ -40,6 +40,7 @@ function main() {
   ul.appendChild(li1);
   ul.appendChild(li2);
   ul.appendChild(li3);
+  document.body.insertBefore(ul, document.getElementsByTagName('h1')[0]);
   document.body.appendChild(ul);
   var finePrint = document.createElement('p');
   finePrint.style.fontSize = '10px';
